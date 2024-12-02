@@ -1,0 +1,183 @@
+body {
+    background: linear-gradient(to bottom, #e7f4e9, #f3f4f6);
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background\ belakang\ new.jpg'); /* Ganti dengan link gambar latar belakang */
+    background-size: cover; /* Agar gambar memenuhi seluruh area */
+    background-position: center; /* Menjaga gambar tetap di tengah */
+    z-index: -1; /* Menempatkan gambar di belakang konten lainnya */
+  }
+  
+  /* Elemen lengkung hijau di atas */
+  .decorative-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105px;
+    background-color: #81f19b;
+    clip-path: none;
+    z-index: -1;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: transparent;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .navbar h4::before {
+    content: "";
+    display: inline-block;
+    width: 30px; /* Sesuaikan lebar gambar */
+    height: 30px; /* Sesuaikan tinggi gambar */
+    background-image: url('your_image_link_here'); /* Ganti dengan link gambar bulan sabit */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%; /* Opsional: bentuk lingkaran */
+  }
+  .navbar h4 {
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: -45rem;
+    font-size: -1rem;
+  }
+  
+  /* Ganti ikon bulan dan bintang dengan gambar */
+.navbar h4 i {
+  display: inline-block; /* Untuk membuatnya sebagai blok */
+  width: 40px; /* Sesuaikan ukuran lebar */
+  height: 40px; /* Sesuaikan ukuran tinggi */
+  background-image: url('logoislamic.png'); /* Tambahkan link gambar */
+  background-size: contain; /* Pastikan gambar sesuai */
+  background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+  background-position: center; /* Menjaga gambar di tengah */
+  font-style: normal; /* Hilangkan ikon font bawaan */
+  color: transparent; /* Hilangkan teks bawaan */
+  left: 50%;
+  margin-top: 3px;
+}
+
+  .navbar button {
+    background-color: transparent; /* Bulatan transparan */
+    border: 2px solid  rgba(0, 0, 0, 0.5) ;
+    border-radius: 50%; /* Membuat bentuk bulat */
+    width: 35px; /* Ukuran bulatan */
+    height: 35px; /* Ukuran bulatan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Warna ikon menjadi hitam */
+    font-size: 18px;
+    margin-top: 4px;
+    transition: background-color 0.3s ease; /* Animasi saat hover */
+  }
+  
+  .search-bar {
+  left: 50%; /* Tempatkan kolom pencarian di tengah */
+  transform: translateX(-50%); /* Geser ke kiri dengan setengah dari lebar elemen */
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  width: 300px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+  }
+  
+  .search-bar button {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  /* Container dan Card */
+  .container {
+    margin-top: 2rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%; /* Gambar akan menyesuaikan dengan lebar card */
+    height: auto; /* Menjaga rasio gambar */
+    object-fit: cover; /* Gambar akan dipotong agar sesuai dengan dimensi tanpa distorsi */
+    border-radius: 8px; /* Menambahkan efek sudut melengkung */
+}
+
+
+  .img-custom {
+    width: 80%; /* Sesuaikan ukuran */
+    height: 200px; /* Contoh tinggi tertentu */
+    object-fit: contain; /* Pastikan gambar tidak terpotong */
+    margin: 0 auto; /* Pusatkan gambar */
+}
+
+  .card-body {
+    padding: 0.7rem;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .card-info {
+    font-size: 0.8rem;
+    color: #67839b;
+    margin-top: 0.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
