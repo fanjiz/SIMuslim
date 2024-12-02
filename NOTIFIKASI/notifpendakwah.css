@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0fff0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('background.jpg'); /* Tambahkan latar belakang jika diperlukan */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header */
+.header {
+    background-color: #39a95b;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Menambahkan jarak antar elemen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan */
+}
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.back-icon {
+    width: 35px; /* Ukuran sedikit lebih kecil agar lebih proporsional */
+    height: 35px;
+}
+
+.header-title {
+    font-size: 18px;
+    color: black; /* Pastikan tetap terlihat di latar hijau */
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Notifications Section */
+.notifications {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Jarak antar notifikasi */
+}
+
+.notification-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar dengan transparansi */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan agar terlihat lebih menarik */
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    transition: transform 0.2s, box-shadow 0.2s; /* Menambahkan efek hover */
+}
+
+.notification-item:hover {
+    transform: translateY(-5px); /* Naik sedikit saat di-hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat di-hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px; /* Penyesuaian padding pada layar kecil */
+    }
+    
+    .back-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-title {
+        font-size: 16px;
+    }
+
+    .notification-item {
+        font-size: 13px;
+        padding: 10px;
+    }
+}

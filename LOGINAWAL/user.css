@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b2e5b5; /* Warna hijau latar belakang */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container Styling */
+  .container {
+    background-color: #ecf9ec; /* Latar belakang putih kehijauan untuk form */
+    width: 400px; /* Mengurangi lebar kontainer */
+    padding: 15px; /* Mengurangi padding di dalam kontainer */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title Styling */
+  .title {
+    text-align: center;
+    margin-bottom: 8px; /* Mengurangi jarak bawah */
+  }
+  
+  .logo-img {
+    width: 100%; /* Sesuaikan dengan lebar kontainer */
+    max-width: 250px; /* Menetapkan lebar maksimum logo lebih kecil */
+    height: auto; /* Menjaga rasio gambar */
+  }
+  
+  /* Subtitle Styling */
+  .subtitle {
+    text-align: center;
+    margin-bottom: 15px; /* Mengurangi margin bawah */
+    font-size: 1rem; /* Mengecilkan ukuran font subtitle */
+    color: #333;
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 12px; /* Mengurangi jarak antara input */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 4px; /* Mengurangi jarak antara label dan input */
+    font-size: 0.8rem; /* Mengecilkan ukuran font label */
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px; /* Mengurangi padding input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Mengecilkan ukuran font input */
+  }
+  
+  /* Password Input Styling */
+  .password-group {
+    position: relative;
+  }
+  
+  .eye-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Mengecilkan ukuran tombol mata */
+  }
+  
+  /* Button Styling */
+  .btn {
+    width: 100%;
+    background-color: #00aa00;
+    color: white;
+    padding: 8px; /* Mengurangi padding tombol */
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Mengecilkan ukuran font tombol */
+    cursor: pointer; /* Menambahkan cursor pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek transisi */
+  }
+  
+  .btn:hover {
+    background-color: #ebef16;
+    transform: scale(1.05); /* Efek zoom-in saat hover */
+  }
+  
+  /* Register Text Styling */
+  .register {
+    text-align: center;
+    margin-top: 12px; /* Mengurangi jarak atas */
+    font-size: 0.8rem; /* Mengecilkan ukuran font teks pendaftaran */
+  }
+  
+  .register a {
+    color: #00aaee;
+    text-decoration: none;
+  }
+  
+  .register a:hover {
+    text-decoration: underline;
+  }
+  

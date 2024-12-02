@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('background.jpg'); /* Tambahkan gambar background */
+    background-size: cover; /* Pastikan gambar menutupi seluruh halaman */
+    background-position: center; /* Posisi gambar di tengah */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px; /* Agar sudutnya lebih lembut */
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 5px; /* Jarak lebih kecil dengan logo */
+    color: #333;
+}
+
+.logo {
+    margin: 5px 0 10px 0; /* Sesuaikan jarak atas dan bawah logo */
+    width: 350px; /* Ukuran logo */
+    height: auto;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Kurangi jarak antara logo dan pilihan */
+}
+
+.choice {
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Animasi pergerakan */
+}
+
+.choice:hover {
+    transform: translateY(-10px); /* Efek bergerak ke atas saat kursor diarahkan */
+}
+
+.choice .icon {
+    margin-bottom: 10px; /* Kurangi jarak antara ikon dan teks */
+}
+
+.choice .icon img {
+    width: 120px; /* Ukuran lebih kecil */
+    height: 100px;
+}
+
+.choice h3 {
+    font-size: 18px; /* Ukuran font judul */
+    margin-bottom: 5px;
+    color: #006400;
+}
+
+.choice p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #080808;
+    margin-top: 5px; /* Jarak kecil antara teks */
+}
+
+/* Tambahan styling untuk link */
+.choice-link {
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: inherit; /* Gunakan warna teks yang sama dengan elemen sekitarnya */
+    display: block; /* Pastikan seluruh div .choice menjadi area klik */
+    transition: color 0.3s ease-in-out; /* Efek transisi untuk warna */
+}
+
+.choice-link:hover {
+    color: #004d00; /* Ubah warna teks saat hover */
+}
+
+/* Hover efek untuk seluruh pilihan */
+.choice-link:hover .choice {
+    transform: translateY(-10px); /* Efek hover tetap diterapkan */
+}
+
+footer {
+    margin-top: 100px;
+    font-size: 12px;
+    color: #888;
+}

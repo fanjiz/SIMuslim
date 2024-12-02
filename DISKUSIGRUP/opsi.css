@@ -1,0 +1,208 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header, .footer, .chat-area {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #24c688; /* Warna hijau */
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    height: 60px; /* Pastikan ketinggian terlihat */
+}
+
+.back-button img {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .back-button {
+    background-color: transparent; /* Menghilangkan latar belakang */
+    border: none; /* Menghilangkan border */
+    padding: 0; /* Menghapus padding default */
+    cursor: pointer; /* Menambahkan cursor pointer saat hover */
+    border-radius: 50%; /* Membuat tombol berbentuk bulat */
+    width: 40px; /* Ukuran tombol */
+    height: 40px; /* Ukuran tombol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.group-info {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.group-info .group-icon {
+    width: 40px; /* Atur ukuran logo */
+    height: 40px; /* Atur ukuran logo */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.group-info .group-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black; /* Kontras dengan background hijau */
+    cursor: pointer;
+}
+
+/* Chat Area */
+.chat-area {
+    padding: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 60px; /* Space for footer */
+}
+
+/* Percakapan */
+.chat-bubble {
+    max-width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fade-in 0.3s ease;
+}
+
+.chat-bubble.left {
+    background: #f8f9fa;
+    margin-left: 0;
+}
+
+.chat-bubble.right {
+    background: #74c69d;
+    margin-left: auto;
+    color: black;
+}
+
+.chat-bubble .sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background-color: #74c69d;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Tombol Ajukan Pertanyaan */
+.ask-button {
+    background-color: #37c26e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ask-button:hover {
+    background-color: #1b4332;
+}
+
+/* Pop-up Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar transparan untuk pop-up */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #aff1d2;
+    padding: 30px; /* Padding lebih besar */
+    border-radius: 15px; /* Sudut lebih bulat */
+    width: 500px; /* Lebar pop-up yang lebih besar */
+    max-width: 90%; /* Responsif untuk layar kecil */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih jelas */
+    display: flex;
+    flex-direction: column; /* Susunan vertikal untuk konten */
+    align-items: center; /* Tengah konten */
+}
+
+.popup-content h2 {
+    margin-bottom: 20px; /* Jarak dengan elemen di bawah */
+    font-size: 24px; /* Ukuran judul lebih besar */
+    color: #1b4332; /* Warna hijau gelap */
+    text-align: center;
+}
+
+textarea {
+    width: 90%; /* Area input lebih kecil dari konten */
+    height: 150px; /* Tinggi textarea lebih besar */
+    margin-bottom: 20px; /* Jarak bawah */
+    padding: 15px; /* Padding lebih lega */
+    border-radius: 8px; /* Sudut lebih halus */
+    border: 2px solid #ddd; /* Border yang lebih jelas */
+    font-size: 16px; /* Ukuran teks lebih besar */
+    resize: none; /* Hilangkan opsi resize */
+}
+
+.popup-actions {
+    display: flex;
+    justify-content: space-between; /* Ruang antar tombol */
+    width: 90%; /* Sesuaikan dengan ukuran textarea */
+    gap: 10px; /* Tambahkan jarak antar tombol */
+}
+
+button.batal, button.kirim {
+    flex-grow: 1; /* Ukuran tombol merata */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px; /* Sudut membulat */
+    font-weight: bold; /* Teks lebih tebal */
+    cursor: pointer;
+}
+
+button.batal {
+    background-color: #f44336; /* Warna merah */
+    color: white;
+    border: none;
+}
+
+button.kirim {
+    background-color: #6DBE45; /* Warna hijau */
+    color: white;
+    border: none;
+}

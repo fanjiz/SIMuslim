@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diskusi Grup</title>
+  <link rel="stylesheet" href="opsi.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <a href='../DISKUSIGRUP/diskusi grup.html'>
+      <button class="back-button">
+          <img src="backikon.png" alt="Back">
+      </button>
+  </a>
+    <div class="group-info">
+      <img src="logogrup.png" alt="Group Icon" class="group-icon">
+      <span class="group-name">Sholat Yang Sempurna</span>
+    </div>
+    <button class="menu-button">...</button>
+  </div>
+
+  <!-- Chat Area -->
+  <div class="chat-area" id="chat-area">
+    <!-- Percakapan -->
+    <div class="chat-bubble left">
+      <span class="sender">Anggota 1</span>
+      <p>Assalamualaikum, Ustadz. Saya ingin bertanya, bagaimana cara memperbaiki sholat yang tergesa-gesa?</p>
+    </div>
+    <div class="chat-bubble left">
+      <span class="sender">Ustadz Abdul Rohman</span>
+      <p>Waalaikumsalam. Sholat yang tergesa-gesa sebaiknya dihindari dengan memperbanyak tadabbur dan fokus pada makna bacaan.</p>
+    </div>
+    <div class="chat-bubble right">
+      <span class="sender">Saya</span>
+      <p>Ustadz, adakah doa khusus yang bisa dibaca agar sholat kita lebih diterima oleh Allah?</p>
+    </div>
+    <div class="chat-bubble left">
+      <span class="sender">Ustadz Abdul Rohman</span>
+      <p>Setiap sholat adalah kesempatan untuk berdoa. Namun, salah satu doa yang bisa dibaca adalah 'اللهم اجعلنا من أهل الصلاة المقبولين' (Ya Allah, jadikanlah kami termasuk orang yang diterima sholatnya). Berdoa dengan hati yang ikhlas sangat penting..</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <button class="ask-button" onclick="showPopup()">Ajukan Pertanyaan</button>
+  </div>
+
+  <!-- Pop-up Form -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Ajukan Pertanyaan</h2>
+      <textarea id="question-input" placeholder="Masukkan pertanyaan Anda..."></textarea>
+      <div class="popup-actions">
+        <button onclick="closePopup()" class="batal">Batal</button>
+        <button id="send-question" class="kirim">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript untuk menambah pertanyaan ke chat -->
+  <script>
+    // Fungsi untuk menampilkan pop-up
+    function showPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    // Fungsi untuk menutup pop-up
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Fungsi untuk menambahkan pertanyaan ke chat
+    document.getElementById('send-question').addEventListener('click', function() {
+      var question = document.getElementById('question-input').value;
+      if (question.trim() !== '') {
+        var chatArea = document.getElementById('chat-area');
+        var newChatBubble = document.createElement('div');
+        newChatBubble.classList.add('chat-bubble', 'right');
+
+        var senderSpan = document.createElement('span');
+        senderSpan.classList.add('sender');
+        senderSpan.textContent = 'Saya';
+
+        var messageP = document.createElement('p');
+        messageP.textContent = question;
+
+        newChatBubble.appendChild(senderSpan);
+        newChatBubble.appendChild(messageP);
+
+        chatArea.appendChild(newChatBubble);
+        
+        // Clear the textarea and close the pop-up
+        document.getElementById('question-input').value = '';
+        closePopup(); // Menutup pop-up
+      }
+    });
+  </script>
+</body>
+</html>

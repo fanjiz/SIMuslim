@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Profil Pengguna</title>
+  <link rel="stylesheet" href="profilpendakwah.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <!-- Tombol Back Button sebagai link untuk mengarah ke HOME -->
+      <a href="../HOMEPAGE/HOMEPENDAKWAH.HTML" class="back-button">&larr; </a>
+      <h1>Profil Pendakwah</h1>
+    </div>
+    <div class="profile">
+      <!-- Foto Profil -->
+      <div class="profile-picture" onclick="document.getElementById('file-input').click();">
+        <img id="profile-img" src="default-profile.jpg" />
+      </div>
+      
+      <!-- Input file untuk mengganti foto -->
+      <input type="file" id="file-input" style="display: none;" onchange="changeProfilePicture(event)">
+
+      <div class="profile-info">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Masukkan email">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeProfilePicture(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.getElementById('profile-img').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+</body>
+</html>

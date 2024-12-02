@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #b2e5b5, #6fc2b4); /* Latar belakang gradasi hijau */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 35px;
+  background-color: #e8ffe8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styling */
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #212020;
+  margin-bottom: 20px;
+}
+
+.registrasi-text {
+  margin-right: 10px;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+}
+
+/* Form Styling */
+.form {
+  margin-top: 10px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button Styling */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #34be69;
+  color: rgb(252, 251, 251);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #04874c;
+}

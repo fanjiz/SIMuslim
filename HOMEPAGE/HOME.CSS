@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('background.jpg'); /* Ganti dengan gambar background */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling */
+.header {
+  background-color: #39a95b;
+  color: white;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 18px;
+  color: black;
+}
+
+/* Header Menu Styling */
+.header-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-text {
+  color: black;
+}
+
+.menu-link:hover {
+  color: white;
+  background-color: #2e8b57;
+  filter: brightness(80%);
+}
+
+.menu-icon {
+  width: 42px;
+  height: 37px;
+}
+
+/* Main Content Styling */
+.main-content {
+  text-align: center;
+  flex: 1;
+}
+
+.main-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.logo-img {
+  width: 350px;
+  height: auto;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.5); /* Menambahkan latar belakang transparan */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efek hover untuk bergerak dan merubah warna latar belakang */
+.feature:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.7); /* Latar belakang sedikit lebih gelap saat hover */
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Custom Icons */
+.group-icon {
+  background-image: url('logogrup.png'); /* Ganti dengan gambar ikon grup */
+}
+
+.islamic-icon {
+  background-image: url('logoislamic.png'); /* Ganti dengan gambar ikon islamic */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: transparent;
+  font-size: 14px;
+  color: #333;
+  padding: 10px 0;
+  margin-top: auto;
+}

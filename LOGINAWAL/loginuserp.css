@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #b2e5b5, #6fc2b4); /* Gradasi dua warna hijau */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  background-color: #ecf9ec; /* Latar belakang putih kehijauan untuk form */
+  width: 350px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 150px; /* Ukuran logo yang sesuai */
+  height: auto;
+}
+
+/* Subtitle Styling */
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Button Styling */
+.btn {
+  width: 100%;
+  background-color: #34be69;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #04874c;
+}
+
+/* Register Text Styling */
+.register {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.register a {
+  color: #00aaee;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
